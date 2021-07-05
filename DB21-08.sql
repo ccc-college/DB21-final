@@ -55,19 +55,12 @@ CREATE TABLE transaction
 /* ---------------------------------------- */
 /* event   【取引事由テーブル】  */
 DROP TABLE IF EXISTS event;
-CREATE TABLE 取引事由
+CREATE TABLE event
  ( reasonid INTEGER,
    reasonname VARCHAR(20)
  );
 /*  reasonid  取引事由ID */
 /*  reasonname  取引事由名 */
-
-
-
-CREATE TABLE 口座 (  口座番号 CHAR(7), 名義 VARCHAR(40), 種別 CHAR(1), 残高 INTEGER, 更新日 DATE  );
-CREATE TABLE 廃止口座 (  口座番号 CHAR(7), 名義 VARCHAR(40), 種別 CHAR(1), 解約時残高 INTEGER, 解約日 DATE  );
-CREATE TABLE 取引 (  取引番号 INTEGER, 取引事由ID INTEGER, 日付 DATE, 口座番号 CHAR(7), 入金額 INTEGER, 出金額 INTEGER  );
-CREATE TABLE 取引事由 (  取引事由ID INTEGER, 取引事由名 VARCHAR(20)  );
 
 /* データ投入 */
 INSERT INTO account ( accountno,accname,type,balance,moddate ) VALUES ( '0037651','キタムラ　ユウコ',1,1341107,'2020-01-03' );
