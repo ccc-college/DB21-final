@@ -1,5 +1,5 @@
 /* 期末課題準備用 SQLファイル */
-CREATE DATABASE study DEFAULT CHARACTER SET utf8;
+CREATE DATABASE study DEFAULT CHARACTER SET utf8mb4;
 use study;
 
 /* ---------------------------------------- */
